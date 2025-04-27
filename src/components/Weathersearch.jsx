@@ -4,7 +4,7 @@ import styles from "./Weathersearch.module.css";
 
 const WeatherCard = ({ title, value }) => {
   return (
-    <div className={styles["weather-card"]}>
+    <div className="weather-card">
       <h2>{title}</h2>
       <p>{value}</p>
     </div>
@@ -62,7 +62,7 @@ function WeatherApp() {
       <div>
         {loading && <p>Loading data...</p>}
         {weatherData && (
-          <div className={styles["weather-cards"]}>
+          <div className="weather-cards">
             {[
               {
                 title: "Temperature",
